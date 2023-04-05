@@ -54,15 +54,23 @@ body {
     transition: .3s;
 }
 
+.product:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
 .image {
     width: 100px;
     height: 60%;
-    display: grid;
-    place-items: center;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    
 }
 
 .image img {
     width: 240px;
+    overflow: hidden;
 }
 
 .namePrice {
@@ -87,3 +95,29 @@ body {
     line-height: 25px;
 }
 
+.rating {
+    font-size: 1.3em;
+    color: #e15f41;
+}
+
+.action {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.action button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background: #303952;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.action button:hover {
+    transform: scale(1.1);
+}
